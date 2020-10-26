@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/fondito4"
+    android:orientation="vertical"
+    tools:context=".ui.ciudades.Ciudades">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/texto_masciudades"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#201E1E"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bBuenosAires"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_buenosaires"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bMoscu"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_moscu"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bCopenhague"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_copenhague"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bOttawa"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_ottawa"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bMadrid"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_madrid"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bWashington"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#352F2F"
+        android:text="@string/boton_washington"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StayWeather</string>
+    <string name="texto_bienvenida">Bienvenido a StayWeather</string>
+    <string name="texto_primeraopcion">¿Que tipos de dias prefieres?</string>
+    <string name="texto_soleados">Soleados</string>
+    <string name="texto_lluviosos">Lluviosos</string>
+    <string name="texto_masciudades">Por favor elija una ciudad para visualizar el Clima</string>
+    <string name="boton_buenosaires">Buenos Aires, Argentina</string>
+    <string name="boton_moscu">Moscu, Rusia</string>
+    <string name="boton_washington">Washington, Estados Unidos</string>
+    <string name="boton_ottawa">Ottawa, Canada</string>
+    <string name="boton_madrid">Madrid, España</string>
+    <string name="boton_copenhague">Copenhague, Dinamarca</string>
+    <string name="texto_o">O</string>
+
+</resources>
