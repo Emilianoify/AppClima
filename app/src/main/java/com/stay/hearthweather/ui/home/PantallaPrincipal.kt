@@ -30,7 +30,7 @@ class PantallaPrincipal : AppCompatActivity() {
         setContentView(R.layout.activity_pantalla_principal)
         val ciudad = intent.getStringExtra("com.stay.hearthweather.ciudades.CIUDAD")
         if(Network.hayRed(this)){
-            solicitudVolley("TU API")
+            solicitudVolley("http://api.openweathermap.org/data/2.5/weather?id=$ciudad&appid=d02f73286a8d2122b690e1b7895a68f5&lang=sp&units=metric")
         }else{
             Toast.makeText(this, "No hay red", Toast.LENGTH_LONG).show()
         }
@@ -43,6 +43,7 @@ class PantallaPrincipal : AppCompatActivity() {
         tvminima= findViewById(R.id.tvminima)
         tvmaxima= findViewById(R.id.tvmaxima)
     }
+    @SuppressLint("SetTextI18n")
     private fun solicitudVolley(url:String){
         val queue = Volley.newRequestQueue(this)
         val solicitud = StringRequest(Request.Method.GET, url, {

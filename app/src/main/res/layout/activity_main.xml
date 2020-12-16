@@ -18,29 +18,29 @@
         android:fontFamily="serif"
         android:text="@string/texto_bienvenida"
         android:textAlignment="center"
-        android:textColor="#FC171616"
+        android:textColor="#FCFAF8F8"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <TextView
         android:id="@+id/primeropcion"
-        android:layout_width="280dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="44dp"
+        android:layout_marginTop="150dp"
         android:backgroundTint="#0FDAD8D8"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/texto_primeraopcion"
         android:textAlignment="center"
-        android:textColor="#FC171616"
+        android:textColor="#FCE6DDDD"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/soleados"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/primerbienvenida" />
 
     <Button
         android:id="@+id/soleados"
@@ -48,31 +48,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#0FDAD8D8"
         android:fontFamily="sans-serif-medium"
         android:text="@string/texto_soleados"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/o"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/primeropcion" />
 
     <TextView
         android:id="@+id/o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
         android:background="#0FDAD8D8"
         android:backgroundTint="#B11B1B"
         android:fontFamily="sans-serif-medium"
         android:text="@string/texto_o"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/lluviosos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/soleados" />
 
     <Button
         android:id="@+id/lluviosos"
@@ -80,26 +80,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#0FDAD8D8"
         android:fontFamily="sans-serif-medium"
         android:text="@string/texto_lluviosos"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/o" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="202dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
-        android:background="#0FDAD8D8"
+        android:layout_marginBottom="16dp"
+        android:background="#0FDDD3D3"
         android:src="@drawable/creditos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -107,13 +108,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05109489" />
+        app:layout_constraintGuide_percent="0.01009489" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.033167496" />
+        app:layout_constraintGuide_percent="0.003167496" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

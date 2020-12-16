@@ -1,10 +1,10 @@
 package com.stay.hearthweather
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.stay.hearthweather.helpers.SharedApp
 import com.stay.hearthweather.ui.ciudades.Ciudades
 
@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         if (SharedApp.prefs.selectedOption){
             goToActivity(SharedApp.prefs.opcion)
         }
-        soleados.setOnClickListener(View.OnClickListener {
+        soleados.setOnClickListener {
             goToActivity("Soleados")
 
-        })
+        }
 
-        lluviosos.setOnClickListener(View.OnClickListener {
+        lluviosos.setOnClickListener{
         goToActivity("Lluviosos")
-        })
+        }
 
     }
     private  fun goToActivity(opcion:String?){
